@@ -1,0 +1,75 @@
+.hero {
+  background: linear-gradient(150deg, #FFF5F8 0%, #ffffff 50%, #F0EAFF 100%);
+  padding: 100px 2rem;
+  text-align: center;
+}
+.heroInner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.heroInner p {
+  font-size: clamp(15px, 2.5vw, 18px);
+  color: var(--muted);
+  font-weight: 300;
+  margin: 1.25rem auto 2.5rem;
+  max-width: 480px;
+  line-height: 1.7;
+}
+.em { color: var(--pink-d); font-style: normal; }
+
+.pills {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+}
+.pill {
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.pillBlue { background: var(--blue); color: var(--blue-dd); }
+.pillLav  { background: var(--lav);  color: var(--lav-dd);  }
+
+/* How section */
+.howSection { background: var(--bg2); }
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 3rem;
+}
+.stepCard {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  border: 1.5px solid var(--pink);
+  transition: box-shadow 0.2s;
+}
+.stepCard:hover { box-shadow: var(--shadow); }
+.stepCard h3 { font-size: 15px; margin-bottom: 6px; }
+.stepCard p  { font-size: 13px; color: var(--muted); font-weight: 300; line-height: 1.6; }
+
+.stepNum {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.sn1 { background: var(--pink); color: #a04870; }
+.sn2 { background: var(--lav);  color: var(--lav-dd); }
+.sn3 { background: var(--blue); color: var(--blue-dd); }
+
+@media (max-width: 768px) {
+  .hero { padding: 70px 1.25rem; }
+  .pill { font-size: 12px; padding: 10px 16px; }
+}

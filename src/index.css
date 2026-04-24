@@ -1,0 +1,99 @@
+/* ── Global reset & CSS variables ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pink:     #F8C8DC;
+  --pink-d:   #d4789c;
+  --pink-dd:  #c4688c;
+  --lav:      #E6D6FF;
+  --lav-d:    #b899e8;
+  --lav-dd:   #8b6bbf;
+  --blue:     #D6ECFF;
+  --blue-d:   #378ADD;
+  --blue-dd:  #185FA5;
+  --bg:       #ffffff;
+  --bg2:      #FFF5F8;
+  --text:     #2e2e3e;
+  --muted:    #7a7a9a;
+  --light:    #9a9ab8;
+  --radius:   16px;
+  --shadow:   0 4px 24px rgba(212,120,156,0.10);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1 { font-size: clamp(36px, 6vw, 60px); font-weight: 700; letter-spacing: -1.5px; line-height: 1.1; }
+h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 600; letter-spacing: -0.5px; }
+h3 { font-size: 18px; font-weight: 600; }
+
+section {
+  padding: 80px 2rem;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section tag badge */
+.section-tag {
+  display: inline-block;
+  background: var(--pink);
+  color: #a04870;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.section-tag.lav  { background: var(--lav);  color: var(--lav-dd); }
+.section-tag.blue { background: var(--blue); color: var(--blue-dd); }
+
+/* Primary button */
+.btn-primary {
+  display: inline-block;
+  background: var(--pink-d);
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 28px rgba(212,120,156,0.35);
+  transition: all 0.2s;
+}
+.btn-primary:hover {
+  background: var(--pink-dd);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(212,120,156,0.4);
+}
