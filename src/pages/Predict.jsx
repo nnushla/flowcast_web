@@ -1,3 +1,11 @@
+<iframe
+  src="https://flowcast-api.streamlit.app/"
+  width="100%"
+  height="800px"
+  frameborder="0"
+  style="border-radius: 16px;">
+</iframe>
+
 import { useState } from 'react'
 import { useFadeIn } from '../hooks/useFadeIn'
 import styles from './Predict.module.css'
