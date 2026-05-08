@@ -1,4 +1,4 @@
-# FlowCast 🌸
+# FlowCast 
 
 > Understand your rhythm. Work with your energy, not against it.
 
